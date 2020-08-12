@@ -74,9 +74,11 @@ function render_bangumi_item_comment($bangumi)
 {
     ?>
     <div class="bangumi-item">
+        <?php if ($bangumi['title']!=null) { ?>
         <div class="bangumi-summary">
             <p><?php echo(esc_attr($bangumi['title'])); ?></p>
         </div>
+        <?php } ?>
         <div class="bangumi-info">
             <img class="bangumi-img" src="<?php echo(esc_url($bangumi['img'])); ?>">
             <div class="bangumi-detail">
