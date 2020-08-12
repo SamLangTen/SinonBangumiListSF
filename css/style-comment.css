@@ -1,59 +1,63 @@
-a.bangumItem {
+div.bangumi-item{
   line-height: 20px;
   white-space: nowrap;
-  box-shadow: 0px 0px 5px black;
-  width: 46%;
+  box-shadow: 0px 0px 5px grey;
   margin: 1.5%;
   float: left;
   overflow: hidden;
   display: block;
-  padding: 0.5%;
-  height: 88px;
-  color: aqua;
-  border: 1px solid;
+  width: 100%;
   border-radius: 10px;
 }
 
-a.bangumItem:hover {
-  color: aqua;
-  opacity: 0.8;
-  filter: saturate(150%);
-  -webkit-filter: saturate(150%);
-  -moz-filter: saturate(150%);
-  -o-filter: saturate(150%);
-  -ms-filter: saturate(150%);
-}
-
-a.bangumItem img {
+div.bangumi-info{
   height: 88px;
-  float: left;
-  padding-right: 5px;
+  display: flex;
+  box-shadow: 0 0 15px -8px rgba(0, 0, 0, .5)
 }
 
-a.bangumItem .textBox {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-  height: 81px;
-  font-size: 18px;
+div.bangumi-detail{
+  width: 100%;
+  padding: 10px;
 }
 
-a.bangumItem div.jinduBG {
+div.bangumi-detail .bangumi-name-cn{
+  font-size: 20px;
+  text-decoration: underline dotted rgba(0, 0, 0, .1);
+}
+div.bangumi-detail .bangumi-name{
+  font-size: 15px;
+  color: gray;
+  margin-left: 5px;
+  text-decoration: underline dotted rgba(0, 0, 0, .1);
+}
+
+div.bangumi-summary{
+  white-space: normal;
+  line-height: initial;
+}
+
+div.bangumi-summary p{
+  margin: 10px;
+}
+
+img.bangumi-img{
+  height: 88px;
+  padding-right: 10px;
+}
+
+div.progress-background {
   height: 18px;
   width: 100%;
   background-color: gray;
-  display: inline-block;
   border-radius: 4px;
-  position: absolute;
-  bottom: 3px;
+  margin-top:5px;
 }
 
-a.bangumItem div.jinduFG {
+div.progress-foreground {
   height: 18px;
   background-color: #3aee85;
   border-radius: 4px;
-  position: absolute;
   bottom: 0px;
   z-index: 1;
   -webkit-animation: jdanimi 2s ease-out forwards;
@@ -63,20 +67,21 @@ a.bangumItem div.jinduFG {
   animation: jdanimi 2s ease-out forwards;
 }
 
-a.bangumItem div.jinduText {
+div.progress-text {
   width: 100%;
   height: auto;
   text-align: center;
   color: rgb(49, 30, 214);
   line-height: 15px;
   font-size: 15px;
-  position: absolute;
-  bottom: 0px;
+  float: left;
+  margin-top:1px;
   z-index: 2;
 }
 
+
 @media screen and (max-width:1000px) {
-  a.bangumItem {
+  a.bangumi-item {
     width: 95%;
   }
 }
