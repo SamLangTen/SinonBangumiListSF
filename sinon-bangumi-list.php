@@ -11,7 +11,7 @@ define("ROOT_PATH", __DIR__);
 require_once(ROOT_PATH."/view-controller.php");
 
 /*load text domain form internationalization*/
-load_plugin_textdomain( "sinon-bangumi-list", "", ROOT_PATH."/lang/" );
+load_plugin_textdomain( "sinon-bangumi-list", false, ROOT_PATH."/lang/" );
 
 /*setup hook into 'admin_menu' to insert option page*/
 add_action("admin_menu", "admin_menu_handler");

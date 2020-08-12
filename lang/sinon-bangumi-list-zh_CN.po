@@ -1,0 +1,184 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sinon-bangumi-list\n"
+"POT-Creation-Date: 2020-08-12 23:42+0800\n"
+"PO-Revision-Date: 2020-08-13 00:15+0800\n"
+"Last-Translator: \n"
+"Language-Team: SamLangTen\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-Basepath: ../views\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: bangumi-edit-component.php\n"
+"X-Poedit-SearchPath-1: bangumi-edit-view.php\n"
+"X-Poedit-SearchPath-2: bangumi-generator-view.php\n"
+"X-Poedit-SearchPath-3: bangumi-list-view.php\n"
+"X-Poedit-SearchPath-4: bangumi-new-view.php\n"
+"X-Poedit-SearchPath-5: bangumi-options-view.php\n"
+"X-Poedit-SearchPath-6: view-helper.php\n"
+
+#: bangumi-edit-component.php:9
+msgid "Edit Bangumi"
+msgstr "编辑番剧"
+
+#: bangumi-edit-component.php:11 bangumi-edit-component.php:134
+msgid "Add Bangumi"
+msgstr "添加番剧"
+
+#: bangumi-edit-component.php:33
+msgid "Invalid episode count"
+msgstr "番剧集数不正确"
+
+#: bangumi-edit-component.php:40
+msgid "Bangumi info saved"
+msgstr "已保存番剧信息"
+
+#: bangumi-edit-component.php:42
+msgid "Failed to save bangumi info"
+msgstr "无法保存番剧信息"
+
+#: bangumi-edit-component.php:71 bangumi-options-view.php:31
+msgid "Image URL"
+msgstr "图片地址"
+
+#: bangumi-edit-component.php:77
+msgid "Bangumi URL"
+msgstr "番剧地址"
+
+#: bangumi-edit-component.php:83
+msgid "Original Name"
+msgstr "原名"
+
+#: bangumi-edit-component.php:89
+msgid "Translated Name"
+msgstr "名称"
+
+#: bangumi-edit-component.php:95
+msgid "Air Date"
+msgstr "首播日期"
+
+#: bangumi-edit-component.php:101
+msgid "Episode Count"
+msgstr "集数"
+
+#: bangumi-edit-component.php:107
+msgid "Summary"
+msgstr "简介"
+
+#: bangumi-edit-component.php:130
+msgid "Bangumi Id"
+msgstr "番剧Id"
+
+#: bangumi-edit-component.php:140
+msgid "Bangumi Keyword"
+msgstr "关键词"
+
+#: bangumi-edit-component.php:144
+msgid "Search Bangumi"
+msgstr "搜索番剧"
+
+#: bangumi-edit-component.php:182
+msgid "Add bangumi"
+msgstr "添加番剧"
+
+#: bangumi-generator-view.php:27
+msgid "Watching"
+msgstr "正在追番"
+
+#: bangumi-generator-view.php:41 bangumi-generator-view.php:95
+#: bangumi-generator-view.php:135 bangumi-list-view.php:68
+msgid "Watched"
+msgstr "追完番剧"
+
+#: bangumi-generator-view.php:55 bangumi-list-view.php:66
+msgid "Ready to Watch"
+msgstr "待追番剧"
+
+#: bangumi-generator-view.php:86
+msgid "Air Date:"
+msgstr "首播日期："
+
+#: bangumi-generator-view.php:92 bangumi-generator-view.php:98
+#: bangumi-generator-view.php:132 bangumi-generator-view.php:138
+msgid "Watched:"
+msgstr "进度："
+
+#: bangumi-generator-view.php:98 bangumi-generator-view.php:138
+msgid " times:"
+msgstr "周目："
+
+#: bangumi-list-view.php:13
+msgid "Invalid progress set"
+msgstr "设置的进度不正确"
+
+#: bangumi-list-view.php:19
+msgid "Invalid times set"
+msgstr "设置的周目不正确"
+
+#: bangumi-list-view.php:27
+msgid "Failed to update status, maybe progress is larger than episode count."
+msgstr "不能更新番剧状态，可能是已看集数超过了番剧总集数"
+
+#: bangumi-list-view.php:32
+msgid "Bangumi List"
+msgstr "番剧列表"
+
+#: bangumi-list-view.php:33
+msgid "Add new bangumi"
+msgstr "添加新番"
+
+#: bangumi-list-view.php:37 bangumi-list-view.php:90
+msgid "Bangumi Name"
+msgstr "番剧名称"
+
+#: bangumi-list-view.php:38 bangumi-list-view.php:91
+msgid "Status"
+msgstr "状态"
+
+#: bangumi-list-view.php:45
+msgid "No Bangumi"
+msgstr "没有番剧"
+
+#: bangumi-list-view.php:54
+msgid "Edit"
+msgstr "编辑"
+
+#: bangumi-list-view.php:57
+msgid "Delete"
+msgstr "删除"
+
+#: bangumi-list-view.php:67
+msgid "In Watching"
+msgstr "正在追番"
+
+#: bangumi-list-view.php:73
+msgid "Progress:"
+msgstr "进度："
+
+#: bangumi-list-view.php:75
+msgid "Times:"
+msgstr "周目："
+
+#: bangumi-list-view.php:79
+msgid "Update Status"
+msgstr "更新状态"
+
+#: bangumi-options-view.php:11
+msgid "Settings saved."
+msgstr "设置已保存"
+
+#: bangumi-options-view.php:14
+msgid "Can't save some settings."
+msgstr "无法保存设置"
+
+#: bangumi-options-view.php:36
+msgid "Comment Mode"
+msgstr "评论模式"
+
+#: bangumi-options-view.php:41
+msgid "List Mode"
+msgstr "列表模式"
