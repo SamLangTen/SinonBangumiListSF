@@ -98,31 +98,15 @@ class bangumi
         $old_bangumi = array_merge([], $bangumi);
         if ($bangumi==null) {
             $bangumi = [];
-        }
-        if ($id!=null) {
-            $bangumi['id']=$id;
-        }
-        if ($url!=null) {
-            $bangumi['url']=$url;
-        }
-        if ($img!=null) {
-            $bangumi['img']=$img;
-        }
-        if ($name!=null) {
-            $bangumi['name']=$name;
-        }
-        if ($name_cn!=null) {
-            $bangumi['name_cn']=$name_cn;
-        }
-        if ($date!=null) {
-            $bangumi['date']=$date;
-        }
-        if ($count!=null) {
-            $bangumi['count']=$count;
-        }
-        if ($title!=null) {
-            $bangumi['title']=$title;
-        }
+        }   
+        $bangumi['id']=$id;              
+        $bangumi['url']=$url;  
+        $bangumi['img']=$img;    
+        $bangumi['name']=$name;    
+        $bangumi['name_cn']=$name_cn;       
+        $bangumi['date']=$date;    
+        $bangumi['count']=$count;     
+        $bangumi['title']=$title;
         $all_bangumi[$id]=$bangumi;
         if ($old_bangumi!=null) {
             //check if not change
