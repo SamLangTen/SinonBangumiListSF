@@ -1,6 +1,11 @@
-# Sinon_Bangumi_List
-Sinon的追番列表——Wordpress插件(Fork版)
+# Sinon Bangumi List
+Sinon的追番列表——Wordpress插件(Sam Fork版)
+
+[原版](https://github.com/SinonJZH/Sinon_Bangumi_List)
 ## 更新日志
+#### V1.2.7 by SamLangTen
+* 修复跟某些主题CSS类相同而出现的Bug
+* 添加了一个嵌入模式
 #### V1.2.6 by SamLangTen
 * 重构所有代码
 * 后台管理页面标准化
