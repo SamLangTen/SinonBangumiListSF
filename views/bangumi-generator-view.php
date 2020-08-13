@@ -73,21 +73,21 @@ foreach ($all_bangumi as $a) {
 function render_bangumi_item_comment($bangumi)
 {
     ?>
-    <div class="bangumi-item">
+    <div class="sinon-bangumi-item">
         <?php if ($bangumi['title']!=null) { ?>
-        <div class="bangumi-summary">
+        <div class="sinon-bangumi-summary">
             <p><?php echo(esc_attr($bangumi['title'])); ?></p>
         </div>
         <?php } ?>
-        <div class="bangumi-info">
-            <img class="bangumi-img" src="<?php echo(esc_url($bangumi['img'])); ?>">
-            <div class="bangumi-detail">
-                <a href="<?php echo(esc_url($bangumi['url'])); ?>" class="bangumi-name-cn"><?php echo(esc_attr($bangumi['name_cn'])); ?></a>
-                <span class="bangumi-name"><?php echo(esc_attr($bangumi['name'])); ?></span>
+        <div class="sinon-bangumi-info">
+            <img class="sinon-bangumi-img" src="<?php echo(esc_url($bangumi['img'])); ?>">
+            <div class="sinon-bangumi-detail">
+                <a href="<?php echo(esc_url($bangumi['url'])); ?>" class="sinon-bangumi-name-cn"><?php echo(esc_attr($bangumi['name_cn'])); ?></a>
+                <span class="sinon-bangumi-name"><?php echo(esc_attr($bangumi['name'])); ?></span>
                 <br/>
                 <span><?php _e("Air Date:", "sinon-bangumi-list"); ?><?php echo(esc_attr($bangumi['date'])); ?></span>
-                <div class="progress-background">
-                    <div class="progress-text">
+                <div class="sinon-progress-background">
+                    <div class="sinon-progress-text">
                     <?php
     $percent = 100;
     if ($bangumi['status']==0) {
@@ -103,7 +103,7 @@ function render_bangumi_item_comment($bangumi)
         $percent=(float) $bangumi['progress'] / $bangumi['count'] * 100;
     } ?>
                     </div>
-                    <div class="progress-foreground" style="width:<?php echo(esc_attr($percent)); ?>%;">
+                    <div class="sinon-progress-foreground" style="width:<?php echo(esc_attr($percent)); ?>%;">
                     </div>
                 </div>
             </div>
@@ -120,14 +120,14 @@ function render_bangumi_item_list($bangumi)
 {
     ?>
     
-    <a href="<?php echo(esc_url($bangumi['url'])); ?>" target="_blank" class="bangumi-item" title="<?php echo(esc_attr($bangumi['title'])); ?>">
+    <a href="<?php echo(esc_url($bangumi['url'])); ?>" target="_blank" class="sinon-bangumi-item" title="<?php echo(esc_attr($bangumi['title'])); ?>">
         <img src="<?php echo(esc_url($bangumi['img'])); ?>"><div class="textbox">
         <?php echo(esc_attr($bangumi['name_cn'])); ?>
         <br>
         <?php echo(esc_attr($bangumi['name'])); ?>
         <br>首播日期：<?php echo(esc_attr($bangumi['date'])); ?><br>
-        <div class="progress-background">
-            <div class="progress-text">
+        <div class="sinon-progress-background">
+            <div class="sinon-progress-text">
                 <?php
     $percent = 100;
     if ($bangumi['status']==0) {
@@ -143,7 +143,7 @@ function render_bangumi_item_list($bangumi)
         $percent=(float) $bangumi['progress'] / $bangumi['count'] * 100;
     } ?>
             </div>
-            <div class="progress-foreground" style="width:<?php echo(esc_attr($percent)); ?>%;"></div></div>
+            <div class="sinon-progress-foreground" style="width:<?php echo(esc_attr($percent)); ?>%;"></div></div>
         </div>
     </a>
     <?php

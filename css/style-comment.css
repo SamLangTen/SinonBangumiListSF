@@ -1,4 +1,4 @@
-div.bangumi-item{
+div.sinon-bangumi-item{
   line-height: 20px;
   white-space: nowrap;
   box-shadow: 0px 0px 5px grey;
@@ -10,43 +10,43 @@ div.bangumi-item{
   border-radius: 10px;
 }
 
-div.bangumi-info{
+div.sinon-bangumi-info{
   height: 88px;
   display: flex;
   box-shadow: 0 0 15px -8px rgba(0, 0, 0, .5)
 }
 
-div.bangumi-detail{
+div.sinon-bangumi-detail{
   width: 100%;
   padding: 10px;
 }
 
-div.bangumi-detail .bangumi-name-cn{
+div.sinon-bangumi-detail .sinon-bangumi-name-cn{
   font-size: 20px;
   text-decoration: underline dotted rgba(0, 0, 0, .1);
 }
-div.bangumi-detail .bangumi-name{
+div.sinon-bangumi-detail .sinon-bangumi-name{
   font-size: 15px;
   color: gray;
   margin-left: 5px;
   text-decoration: underline dotted rgba(0, 0, 0, .1);
 }
 
-div.bangumi-summary{
+div.sinon-bangumi-summary{
   white-space: normal;
   line-height: initial;
 }
 
-div.bangumi-summary p{
+div.sinon-bangumi-summary p{
   margin: 10px;
 }
 
-img.bangumi-img{
+img.sinon-bangumi-img{
   height: 88px;
   padding-right: 10px;
 }
 
-div.progress-background {
+div.sinon-progress-background {
   height: 18px;
   width: 100%;
   background-color: gray;
@@ -54,7 +54,7 @@ div.progress-background {
   margin-top:5px;
 }
 
-div.progress-foreground {
+div.sinon-progress-foreground {
   height: 18px;
   background-color: #3aee85;
   border-radius: 4px;
@@ -67,7 +67,7 @@ div.progress-foreground {
   animation: jdanimi 2s ease-out forwards;
 }
 
-div.progress-text {
+div.sinon-progress-text {
   width: 100%;
   height: auto;
   text-align: center;
@@ -81,7 +81,7 @@ div.progress-text {
 
 
 @media screen and (max-width:1000px) {
-  a.bangumi-item {
+  a.sinon-bangumi-item {
     width: 95%;
   }
 }

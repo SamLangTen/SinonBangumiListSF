@@ -1,5 +1,5 @@
 
-a.bangumi-item {
+a.sinon-bangumi-item {
     line-height: 20px;
     white-space: nowrap;
     box-shadow: 0px 0px 5px grey;
@@ -12,7 +12,7 @@ a.bangumi-item {
     border-radius: 10px;
   }
   
-  a.bangumi-item:hover {
+  a.sinon-bangumi-item:hover {
     opacity: 0.8;
     filter: saturate(150%);
     -webkit-filter: saturate(150%);
@@ -21,13 +21,13 @@ a.bangumi-item {
     -ms-filter: saturate(150%);
   }
   
-  a.bangumi-item img {
+  a.sinon-bangumi-item img {
     height: 88px;
     float: left;
     padding-right: 5px;
   }
   
-  a.bangumi-item .textbox {
+  a.sinon-bangumi-item .textbox {
     text-overflow: ellipsis;
     overflow: hidden;
     position: relative;
@@ -36,7 +36,7 @@ a.bangumi-item {
     margin: 5px;
   }
   
-  a.bangumi-item div.progress-background {
+  a.sinon-bangumi-item div.sinon-progress-background {
     height: 18px;
     width: 100%;
     background-color: gray;
@@ -46,7 +46,7 @@ a.bangumi-item {
     bottom: 3px;
   }
   
-  a.bangumi-item div.progress-foreground {
+  a.sinon-bangumi-item div.sinon-progress-foreground {
     height: 18px;
     background-color: #3aee85;
     border-radius: 4px;
@@ -60,7 +60,7 @@ a.bangumi-item {
     animation: jdanimi 2s ease-out forwards;
   }
   
-  a.bangumi-item div.progress-text {
+  a.sinon-bangumi-item div.sinon-progress-text {
     width: 100%;
     height: auto;
     text-align: center;
@@ -73,7 +73,7 @@ a.bangumi-item {
   }
   
   @media screen and (max-width:1000px) {
-    a.bangumi-item {
+    a.sinon-bangumi-item {
       width: 95%;
     }
   }
