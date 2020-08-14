@@ -1,32 +1,39 @@
 <?php require_once(ROOT_PATH."/functions/bangumi.php"); ?>
 <?php require_once(ROOT_PATH."/views/view-helper.php");?>
 <?php
-    //Update Status
-    $id = (int)$_POST['id'];
-    if ($_POST['action']=="update_status") {
-        //Update
-        if ((int)$_POST['bg_status']==1) {
-            //if in Watching, update progress and times
-            if ($_POST['progress']!=null && is_numeric($_POST['progress'])) {
-                $progress = (int)sanitize_text_field($_POST['progress']);
-            } else {
-                show_dismissible_notice(__("Invalid progress set", "sinon-bangumi-list"), "error");
-            }
-
-            if ($_POST['times']!=null&& is_numeric($_POST['times'])) {
-                $times = (int)sanitize_text_field($_POST['times']);
-            } else {
-                show_dismissible_notice(__("Invalid times set", "sinon-bangumi-list"), "error");
-            }
+    if ($_SERVER['REQUEST_METHOD']=="POST") {
+        if (! isset($_POST['list_action'])|| ! wp_verify_nonce($_POST['list_action'], 'sbl_list_update_status_action')) {
+            print 'Sorry, your nonce did not verify.';
+            exit;
         }
-        $status = (int)sanitize_text_field($_POST['bg_status']);
-        $result = bangumi:: update_bangumi_status($id, $status, $times, $progress);
-        if ($result==true) {
-            show_dismissible_notice(__("Bangumi $id status updated", "sinon-bangumi-list"), "success");
-        } else {
-            show_dismissible_notice(__("Failed to update status, maybe progress is larger than episode count.", "sinon-bangumi-list"), "error");
+        //Update Status
+        $id = (int)$_POST['id'];
+        if ($_POST['action']=="update_status") {
+            //Update
+            if ((int)$_POST['bg_status']==1) {
+                //if in Watching, update progress and times
+                if ($_POST['progress']!=null && is_numeric($_POST['progress'])) {
+                    $progress = (int)sanitize_text_field($_POST['progress']);
+                } else {
+                    show_dismissible_notice(__("Invalid progress set", "sinon-bangumi-list"), "error");
+                }
+
+                if ($_POST['times']!=null&& is_numeric($_POST['times'])) {
+                    $times = (int)sanitize_text_field($_POST['times']);
+                } else {
+                    show_dismissible_notice(__("Invalid times set", "sinon-bangumi-list"), "error");
+                }
+            }
+            $status = (int)sanitize_text_field($_POST['bg_status']);
+            $result = bangumi:: update_bangumi_status($id, $status, $times, $progress);
+            if ($result==true) {
+                show_dismissible_notice(__("Bangumi $id status updated", "sinon-bangumi-list"), "success");
+            } else {
+                show_dismissible_notice(__("Failed to update status, maybe progress is larger than episode count.", "sinon-bangumi-list"), "error");
+            }
         }
     }
+    
 ?>
 <div class="wrap">
     <h1 class="wp-heading-inline"><?php _e("Bangumi List", "sinon-bangumi-list") ?></h1>
@@ -60,6 +67,7 @@
                 </th>
                 <td>
                     <form action="" method="POST">
+                        <?php wp_nonce_field("sbl_list_update_status_action", "list_action"); ?>
                         <input type="hidden" value="update_status" name="action"/>
                         <input type="hidden" value="<?php echo($bangumi["id"]) ?>" name="id"/>
                         <select name="bg_status">
