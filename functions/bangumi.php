@@ -126,4 +126,16 @@ class bangumi
 
         return update_option("sinonbangumilist_savedbangumi", $all_bangumi);
     }
+
+    /**
+    * Update bangumi by id
+    *
+    * @access public
+    * @return boolean Whether bangumi has been updated or not.
+    * @return array bangumi
+    */
+    public static function get_all_bangumi()
+    {
+        return get_option("sinonbangumilist_savedbangumi");
+    }
 }
