@@ -1,8 +1,13 @@
-# Sinon Bangumi List
+# Sinon Bangumi List SF
 Sinon的追番列表——Wordpress插件(Sam Fork版)
 
 [原版](https://github.com/SinonJZH/Sinon_Bangumi_List)
 ## 更新日志
+#### V1.2.8 by SamLangTen
+* 所有番剧列表增加了筛选
+* 删除增加了确认页面
+* 调整编辑番剧页面的逻辑使之更符合原版WordPress的行为
+* 修正了部分汉化
 #### V1.2.7 by SamLangTen
 * 修复跟某些主题CSS类相同而出现的Bug
 * 添加了一个嵌入模式

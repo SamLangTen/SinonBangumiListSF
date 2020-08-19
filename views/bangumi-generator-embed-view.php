@@ -11,7 +11,9 @@ wp_enqueue_style('Sinon_Bangumi_Item', $css_url);
 function render_bangumi_item_embed($bangumi_id)
 {
     $bangumi = bangumi::get_bangumi_by_id($bangumi_id);
-    ?>
+    if ($bangumi==null) {
+        return;
+    } ?>
     <a href="<?php echo(esc_url($bangumi['url'])); ?>" target="_blank" class="sinon-bangumi-item" title="<?php echo(esc_attr($bangumi['title'])); ?>">
         <img src="<?php echo(esc_url($bangumi['img'])); ?>"><div class="textbox">
         <?php echo(esc_attr($bangumi['name_cn'])); ?>

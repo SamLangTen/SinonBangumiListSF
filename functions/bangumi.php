@@ -58,6 +58,8 @@ class bangumi
             $all_bangumi=[];
         }
         $bangumi = $all_bangumi[$id];
+        //copy bangumi
+        $old_bangumi = array_merge([], $bangumi);
         $bangumi['status']=$status;
         if ($times!=null) {
             $bangumi['times']=$times;
@@ -68,8 +70,15 @@ class bangumi
                 return false;
             }
         }
-        
         $all_bangumi[$id]=$bangumi;
+        
+        if ($old_bangumi!=null) {
+            //check if not change
+            if ($old_bangumi == $bangumi) {
+                return true;
+            }
+        }
+
         return update_option("sinonbangumilist_savedbangumi", $all_bangumi);
     }
 
@@ -98,14 +107,14 @@ class bangumi
         $old_bangumi = array_merge([], $bangumi);
         if ($bangumi==null) {
             $bangumi = [];
-        }   
-        $bangumi['id']=$id;              
-        $bangumi['url']=$url;  
-        $bangumi['img']=$img;    
-        $bangumi['name']=$name;    
-        $bangumi['name_cn']=$name_cn;       
-        $bangumi['date']=$date;    
-        $bangumi['count']=$count;     
+        }
+        $bangumi['id']=$id;
+        $bangumi['url']=$url;
+        $bangumi['img']=$img;
+        $bangumi['name']=$name;
+        $bangumi['name_cn']=$name_cn;
+        $bangumi['date']=$date;
+        $bangumi['count']=$count;
         $bangumi['title']=$title;
         $all_bangumi[$id]=$bangumi;
         if ($old_bangumi!=null) {
@@ -116,5 +125,17 @@ class bangumi
         }
 
         return update_option("sinonbangumilist_savedbangumi", $all_bangumi);
+    }
+
+    /**
+    * Update bangumi by id
+    *
+    * @access public
+    * @return boolean Whether bangumi has been updated or not.
+    * @return array bangumi
+    */
+    public static function get_all_bangumi()
+    {
+        return get_option("sinonbangumilist_savedbangumi");
     }
 }

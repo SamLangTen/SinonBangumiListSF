@@ -4,12 +4,12 @@ Donate link: https://sinon.top/donate/
 Tags: bangumi_list
 Requires at least: 4.6
 Tested up to: 5.4
-Stable tag: 1.2.7
+Stable tag: 1.2.8
 Requires PHP: 5.2.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Sinon的追番列表插件，安装插件后，使用短代码[bangumi]在页面上生成追番列表，在“工具-更新追番列表”菜单中配置追番列表。
+Sinon的追番列表插件，安装插件后，使用短代码[bangumi id="all"]在页面上生成追番列表，[bangumi id="id"]在任意页面嵌入单个番剧信息，在“后台”菜单中配置追番列表。
 
 == Description ==
 
@@ -54,6 +54,11 @@ Also see the copyright notice for bgm.tv: https://bgm.tv/about/copyright.
 2. /assets/screenshot-2.png
 
 == Changelog ==
+= V1.2.8 by SamLangTen =
+* 所有番剧列表增加了筛选
+* 删除增加了确认页面
+* 调整编辑番剧页面的逻辑使之更符合原版WordPress的行为
+* 修正了部分汉化
 = V1.2.7 by SamLangTen =
 * 修复跟某些主题CSS类相同而出现的Bug
 * 添加了一个嵌入模式
