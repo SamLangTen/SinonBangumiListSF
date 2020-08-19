@@ -1,3 +1,4 @@
+<?php require_once(ROOT_PATH."/functions/bangumi.php"); ?>
 <?php
 //Insert css
 $display_mode = get_option("sinonbangumilist_displaymode");
@@ -8,7 +9,7 @@ if ($display_mode=="comment") {
 }
 wp_enqueue_style('Sinon_Bangumi_Item', $css_url);
 //Group bangumi
-$all_bangumi = get_option("sinonbangumilist_savedbangumi");
+$all_bangumi = bangumi::get_all_bangumi();
 $ready_count = 0;
 $watch_count = 0;
 $finish_count = 0;
