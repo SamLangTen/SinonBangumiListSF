@@ -63,12 +63,16 @@ class bangumi
         $bangumi['status']=$status;
         if ($times!=null) {
             $bangumi['times']=$times;
+        } else {
+            $bangumi['times']=1;
         }
         if ($progress!=null) {
             $bangumi['progress']=$progress;
             if ($progress>(int)$bangumi['count']) {
                 return false;
             }
+        } else {
+            $bangumi['progress']=0;
         }
         //update time
         $bangumi['update_time'] = new DateTime();

@@ -14,14 +14,9 @@
                 //if in Watching, update progress and times
                 if ($_POST['progress']!=null && is_numeric($_POST['progress'])) {
                     $progress = (int)sanitize_text_field($_POST['progress']);
-                } else {
-                    show_dismissible_notice(__("Invalid progress set", "sinon-bangumi-list"), "error");
                 }
-
                 if ($_POST['times']!=null&& is_numeric($_POST['times'])) {
                     $times = (int)sanitize_text_field($_POST['times']);
-                } else {
-                    show_dismissible_notice(__("Invalid times set", "sinon-bangumi-list"), "error");
                 }
             }
             $status = (int)sanitize_text_field($_POST['bg_status']);
