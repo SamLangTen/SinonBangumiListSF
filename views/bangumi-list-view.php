@@ -27,7 +27,7 @@
             $status = (int)sanitize_text_field($_POST['bg_status']);
             $result = bangumi:: update_bangumi_status($id, $status, $times, $progress);
             if ($result==true) {
-                show_dismissible_notice(__("Bangumi $id status updated", "sinon-bangumi-list"), "success");
+                show_dismissible_notice(__("Bangumi status updated", "sinon-bangumi-list"), "success");
             } else {
                 show_dismissible_notice(__("Failed to update status, maybe progress is larger than episode count.", "sinon-bangumi-list"), "error");
             }
