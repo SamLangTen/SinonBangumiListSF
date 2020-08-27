@@ -8,8 +8,34 @@ if ($display_mode=="comment") {
     $css_url = esc_url(plugins_url('../css/style-list.css', __FILE__));
 }
 wp_enqueue_style('Sinon_Bangumi_Item', $css_url);
-//Group bangumi
+//Get Bangumi
 $all_bangumi = bangumi::get_all_bangumi();
+
+//Sort Bangumi
+$sort_mode = get_option("sinonbangumilist_sortmode");
+if ($sort_mode=="id") {
+    ksort($all_bangumi);
+} elseif ($sort_mode=="update_time") {
+    usort($all_bangumi, function ($a, $b) {
+        if ($a['update_time']==null) {
+            return 1;
+        }
+        if ($b['update_time']==null) {
+            return -1;
+        }
+        if ($a['update_time'] == $b['update_time']) {
+            return 0;
+        }
+        return ($a['update_time'] < $b['update_time']) ? 1 : -1;
+    });
+    $new_bangumi = array();
+    foreach ($all_bangumi as $a) {
+        $new_bangumi[$a['id']]=$a;
+    }
+    $all_bangumi = $new_bangumi;
+}
+
+//Classify bangumi
 $ready_count = 0;
 $watch_count = 0;
 $finish_count = 0;

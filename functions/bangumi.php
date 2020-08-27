@@ -70,6 +70,9 @@ class bangumi
                 return false;
             }
         }
+        //update time
+        $bangumi['update_time'] = new DateTime();
+        //set bangumi
         $all_bangumi[$id]=$bangumi;
         
         if ($old_bangumi!=null) {
@@ -116,6 +119,8 @@ class bangumi
         $bangumi['date']=$date;
         $bangumi['count']=$count;
         $bangumi['title']=$title;
+        $bangumi['update_time'] = new DateTime();
+        
         $all_bangumi[$id]=$bangumi;
         if ($old_bangumi!=null) {
             //check if not change
