@@ -22,7 +22,7 @@ add_shortcode("bangumi", 'view_controller::bangumi_render');
 function admin_menu_handler()
 {
     global $submenu;
-    add_menu_page(__("Sinon Bangumi", "sinon-bangumi-list"), __("Sinon Bangumi", "sinon-bangumi-list"), "administrator", "sinon_bangumi_options", "view_controller::bangumi_options");
+    add_menu_page(__("Sinon Bangumi", "sinon-bangumi-list"), __("Sinon Bangumi", "sinon-bangumi-list"), "administrator", "sinon_bangumi_options", "view_controller::bangumi_options", "dashicons-album");
     add_submenu_page("sinon_bangumi_options", __("Bangumi List", "sinon-bangumi-list"), __("Bangumi List", "sinon-bangumi-list"), "administrator", "sinon_bangumi_list", "view_controller::bangumi_list");
     add_submenu_page("sinon_bangumi_options", __("Add new bangumi", "sinon-bangumi-list"), __("Add new bangumi", "sinon-bangumi-list"), "administrator", "sinon_bangumi_new", "view_controller::bangumi_new");
     if ($_GET['page']=="sinon_bangumi_edit") {
