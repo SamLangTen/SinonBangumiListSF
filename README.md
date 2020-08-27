@@ -3,6 +3,10 @@ Sinon的追番列表——Wordpress插件(Sam Fork版)
 
 [原版](https://github.com/SinonJZH/Sinon_Bangumi_List)
 ## 更新日志
+#### V1.2.9 by SamLangTen
+* 增加了所有番剧页面的排序
+* 修复更新番剧状态时默认不存在进度和周目
+* 修复了所有番剧页面的样式
 #### V1.2.8 by SamLangTen
 * 所有番剧列表增加了筛选
 * 删除增加了确认页面
