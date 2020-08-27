@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: sinon-bangumi-list\n"
-"POT-Creation-Date: 2020-08-19 22:12+0800\n"
-"PO-Revision-Date: 2020-08-19 22:13+0800\n"
+"POT-Creation-Date: 2020-08-27 17:09+0800\n"
+"PO-Revision-Date: 2020-08-27 17:09+0800\n"
 "Last-Translator: \n"
 "Language-Team: SamLangTen\n"
 "Language: zh_CN\n"
@@ -10,189 +10,216 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.1\n"
-"X-Poedit-Basepath: ../views\n"
+"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-KeywordsList: __;_e\n"
-"X-Poedit-SearchPath-0: bangumi-edit-component.php\n"
-"X-Poedit-SearchPath-1: bangumi-edit-view.php\n"
-"X-Poedit-SearchPath-2: bangumi-generator-view.php\n"
-"X-Poedit-SearchPath-3: bangumi-list-view.php\n"
-"X-Poedit-SearchPath-4: bangumi-new-view.php\n"
-"X-Poedit-SearchPath-5: bangumi-options-view.php\n"
-"X-Poedit-SearchPath-6: view-helper.php\n"
+"X-Poedit-SearchPath-0: views/bangumi-edit-component.php\n"
+"X-Poedit-SearchPath-1: views/bangumi-edit-view.php\n"
+"X-Poedit-SearchPath-2: views/bangumi-generator-view.php\n"
+"X-Poedit-SearchPath-3: views/bangumi-list-view.php\n"
+"X-Poedit-SearchPath-4: views/bangumi-new-view.php\n"
+"X-Poedit-SearchPath-5: views/bangumi-options-view.php\n"
+"X-Poedit-SearchPath-6: views/view-helper.php\n"
+"X-Poedit-SearchPath-7: sinon-bangumi-list.php\n"
+"X-Poedit-SearchPath-8: view-controller.php\n"
 
-#: bangumi-edit-component.php:9
-msgid "Edit Bangumi"
-msgstr "编辑番剧"
+#: sinon-bangumi-list.php:25
+msgid "Sinon Bangumi"
+msgstr "Sinon的追番列表"
 
-#: bangumi-edit-component.php:11 bangumi-edit-component.php:157
-msgid "Add Bangumi"
-msgstr "添加番剧"
-
-#: bangumi-edit-component.php:53
-msgid "Invalid episode count"
-msgstr "番剧集数不正确"
-
-#: bangumi-edit-component.php:60
-msgid "Bangumi info saved"
-msgstr "已保存番剧信息"
-
-#: bangumi-edit-component.php:62
-msgid "Failed to save bangumi info"
-msgstr "无法保存番剧信息"
-
-#: bangumi-edit-component.php:93 bangumi-options-view.php:31
-msgid "Image URL"
-msgstr "图片地址"
-
-#: bangumi-edit-component.php:99
-msgid "Bangumi URL"
-msgstr "番剧地址"
-
-#: bangumi-edit-component.php:105
-msgid "Original Name"
-msgstr "原名"
-
-#: bangumi-edit-component.php:111
-msgid "Translated Name"
-msgstr "名称"
-
-#: bangumi-edit-component.php:117
-msgid "Air Date"
-msgstr "首播日期"
-
-#: bangumi-edit-component.php:123
-msgid "Episode Count"
-msgstr "集数"
-
-#: bangumi-edit-component.php:129
-msgid "Summary"
-msgstr "简介"
-
-#: bangumi-edit-component.php:152
-msgid "Bangumi Id"
-msgstr "番剧Id"
-
-#: bangumi-edit-component.php:163
-msgid "Bangumi Keyword"
-msgstr "关键词"
-
-#: bangumi-edit-component.php:168
-msgid "Search Bangumi"
-msgstr "搜索番剧"
-
-#: bangumi-edit-component.php:207
-msgid "Add bangumi"
-msgstr "添加番剧"
-
-#: bangumi-edit-view.php:30
-msgid "Delete bangumi"
-msgstr "删除番剧"
-
-#: bangumi-edit-view.php:31
-msgid "You are going to delete this bangumi"
-msgstr "你将要删除此番剧"
-
-#: bangumi-edit-view.php:37 bangumi-list-view.php:105
-msgid "Delete"
-msgstr "删除"
-
-#: bangumi-generator-view.php:27
-msgid "Watching"
-msgstr "正在追番"
-
-#: bangumi-generator-view.php:41 bangumi-generator-view.php:97
-#: bangumi-generator-view.php:137 bangumi-list-view.php:77
-#: bangumi-list-view.php:117
-msgid "Watched"
-msgstr "已追番剧"
-
-#: bangumi-generator-view.php:55 bangumi-list-view.php:75
-#: bangumi-list-view.php:115
-msgid "Ready to Watch"
-msgstr "待追番剧"
-
-#: bangumi-generator-view.php:88
-msgid "Air Date:"
-msgstr "首播日期："
-
-#: bangumi-generator-view.php:94 bangumi-generator-view.php:100
-#: bangumi-generator-view.php:134 bangumi-generator-view.php:140
-msgid "Watched:"
-msgstr "进度："
-
-#: bangumi-generator-view.php:100 bangumi-generator-view.php:140
-msgid " times:"
-msgstr "周目："
-
-#: bangumi-list-view.php:18
-msgid "Invalid progress set"
-msgstr "设置的进度不正确"
-
-#: bangumi-list-view.php:24
-msgid "Invalid times set"
-msgstr "设置的周目不正确"
-
-#: bangumi-list-view.php:32
-msgid "Failed to update status, maybe progress is larger than episode count."
-msgstr "不能更新番剧状态，可能是已看集数超过了番剧总集数"
-
-#: bangumi-list-view.php:69
+#: sinon-bangumi-list.php:26 views/bangumi-list-view.php:64
 msgid "Bangumi List"
 msgstr "番剧列表"
 
-#: bangumi-list-view.php:70
+#: sinon-bangumi-list.php:27 views/bangumi-list-view.php:65
 msgid "Add new bangumi"
 msgstr "添加新番"
 
-#: bangumi-list-view.php:74
+#: sinon-bangumi-list.php:29
+msgid "Edit bangumi"
+msgstr "编辑番剧"
+
+#: views/bangumi-edit-component.php:9
+msgid "Edit Bangumi"
+msgstr "编辑番剧"
+
+#: views/bangumi-edit-component.php:11 views/bangumi-edit-component.php:157
+msgid "Add Bangumi"
+msgstr "添加番剧"
+
+#: views/bangumi-edit-component.php:53
+msgid "Invalid episode count"
+msgstr "番剧集数不正确"
+
+#: views/bangumi-edit-component.php:60
+msgid "Bangumi info saved"
+msgstr "已保存番剧信息"
+
+#: views/bangumi-edit-component.php:62
+msgid "Failed to save bangumi info"
+msgstr "无法保存番剧信息"
+
+#: views/bangumi-edit-component.php:93 views/bangumi-options-view.php:34
+msgid "Image URL"
+msgstr "图片地址"
+
+#: views/bangumi-edit-component.php:99
+msgid "Bangumi URL"
+msgstr "番剧地址"
+
+#: views/bangumi-edit-component.php:105
+msgid "Original Name"
+msgstr "原名"
+
+#: views/bangumi-edit-component.php:111
+msgid "Translated Name"
+msgstr "名称"
+
+#: views/bangumi-edit-component.php:117
+msgid "Air Date"
+msgstr "首播日期"
+
+#: views/bangumi-edit-component.php:123
+msgid "Episode Count"
+msgstr "集数"
+
+#: views/bangumi-edit-component.php:129
+msgid "Summary"
+msgstr "简介"
+
+#: views/bangumi-edit-component.php:152
+msgid "Bangumi Id"
+msgstr "番剧Id"
+
+#: views/bangumi-edit-component.php:163
+msgid "Bangumi Keyword"
+msgstr "关键词"
+
+#: views/bangumi-edit-component.php:168
+msgid "Search Bangumi"
+msgstr "搜索番剧"
+
+#: views/bangumi-edit-component.php:207
+msgid "Add bangumi"
+msgstr "添加番剧"
+
+#: views/bangumi-edit-view.php:30
+msgid "Delete bangumi"
+msgstr "删除番剧"
+
+#: views/bangumi-edit-view.php:31
+msgid "You are going to delete this bangumi"
+msgstr "你将要删除此番剧"
+
+#: views/bangumi-edit-view.php:37 views/bangumi-list-view.php:100
+msgid "Delete"
+msgstr "删除"
+
+#: views/bangumi-generator-view.php:54
+msgid "Watching"
+msgstr "正在追番"
+
+#: views/bangumi-generator-view.php:68 views/bangumi-generator-view.php:124
+#: views/bangumi-generator-view.php:164 views/bangumi-list-view.php:72
+#: views/bangumi-list-view.php:112
+msgid "Watched"
+msgstr "已追番剧"
+
+#: views/bangumi-generator-view.php:82 views/bangumi-list-view.php:70
+#: views/bangumi-list-view.php:110
+msgid "Ready to Watch"
+msgstr "待追番剧"
+
+#: views/bangumi-generator-view.php:115
+msgid "Air Date:"
+msgstr "首播日期："
+
+#: views/bangumi-generator-view.php:121 views/bangumi-generator-view.php:127
+#: views/bangumi-generator-view.php:161 views/bangumi-generator-view.php:167
+msgid "Watched:"
+msgstr "进度："
+
+#: views/bangumi-generator-view.php:127 views/bangumi-generator-view.php:167
+msgid " times:"
+msgstr "周目："
+
+#: views/bangumi-list-view.php:25
+msgid "Bangumi status updated"
+msgstr "已更新番剧状态"
+
+#: views/bangumi-list-view.php:27
+msgid "Failed to update status, maybe progress is larger than episode count."
+msgstr "不能更新番剧状态，可能是已看集数超过了番剧总集数"
+
+#: views/bangumi-list-view.php:69
 msgid "All"
 msgstr "全部"
 
-#: bangumi-list-view.php:76 bangumi-list-view.php:116
+#: views/bangumi-list-view.php:71 views/bangumi-list-view.php:111
 msgid "In Watching"
 msgstr "正在追番"
 
-#: bangumi-list-view.php:83 bangumi-list-view.php:143
+#: views/bangumi-list-view.php:78 views/bangumi-list-view.php:138
 msgid "Bangumi Name"
 msgstr "番剧名称"
 
-#: bangumi-list-view.php:84 bangumi-list-view.php:144
+#: views/bangumi-list-view.php:79 views/bangumi-list-view.php:139
 msgid "Status"
 msgstr "状态"
 
-#: bangumi-list-view.php:102
+#: views/bangumi-list-view.php:97
 msgid "Edit"
 msgstr "编辑"
 
-#: bangumi-list-view.php:122
+#: views/bangumi-list-view.php:117
 msgid "Progress:"
 msgstr "进度："
 
-#: bangumi-list-view.php:124
+#: views/bangumi-list-view.php:119
 msgid "Times:"
 msgstr "周目："
 
-#: bangumi-list-view.php:128
+#: views/bangumi-list-view.php:123
 msgid "Update Status"
 msgstr "更新状态"
 
-#: bangumi-list-view.php:137
+#: views/bangumi-list-view.php:132
 msgid "No Bangumi"
 msgstr "没有番剧"
 
-#: bangumi-options-view.php:11
+#: views/bangumi-options-view.php:11
 msgid "Settings saved."
 msgstr "设置已保存"
 
-#: bangumi-options-view.php:14
-msgid "Can't save some settings."
-msgstr "无法保存设置"
+#: views/bangumi-options-view.php:26
+msgid "Sinon Bangumi List Options"
+msgstr "Sinon的追番列表设置"
 
-#: bangumi-options-view.php:36
+#: views/bangumi-options-view.php:39
 msgid "Comment Mode"
 msgstr "评论模式"
 
-#: bangumi-options-view.php:41
+#: views/bangumi-options-view.php:44
 msgid "List Mode"
 msgstr "列表模式"
+
+#: views/bangumi-options-view.php:51
+msgid "Sort Mode"
+msgstr "排序模式"
+
+#: views/bangumi-options-view.php:56
+msgid "Sort by Update Time"
+msgstr "根据更新时间排序"
+
+#: views/bangumi-options-view.php:61
+msgid "Sort by Id"
+msgstr "根据Id排序"
+
+#~ msgid "Invalid progress set"
+#~ msgstr "设置的进度不正确"
+
+#~ msgid "Invalid times set"
+#~ msgstr "设置的周目不正确"
+
+#~ msgid "Can't save some settings."
+#~ msgstr "无法保存设置"
